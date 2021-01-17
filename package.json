@@ -21,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/samsoft00/getir-restful-api-challenge/issues"
   },
-  "homepage": "https://github.com/samsoft00/getir-restful-api-challenge#readme"
+  "homepage": "https://github.com/samsoft00/getir-restful-api-challenge#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20"
+  }
 }
