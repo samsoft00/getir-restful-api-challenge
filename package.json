@@ -1,0 +1,25 @@
+{
+  "name": "getir",
+  "version": "1.0.0",
+  "description": "Restful api to fetch records within a timeframe",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samsoft00/getir-restful-api-challenge.git"
+  },
+  "keywords": [
+    "getir",
+    "restful",
+    "api",
+    "challenge"
+  ],
+  "author": "Oyewole Abayomi Samuel <oyewoleabayomi@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samsoft00/getir-restful-api-challenge/issues"
+  },
+  "homepage": "https://github.com/samsoft00/getir-restful-api-challenge#readme"
+}
