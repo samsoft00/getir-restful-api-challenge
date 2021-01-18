@@ -4,7 +4,10 @@
   "description": "Restful api to fetch records within a timeframe",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "NODE_ENV=development NODE_CONFIG_DIR=./src/configs nodemon",
+    "build": "NODE_ENV=production babel src -d dist --copy-files",
+    "fix": "standard --fix",
+    "test": "jest --no-cache --detectOpenHandles --forceExit"
   },
   "repository": {
     "type": "git",
@@ -24,9 +27,44 @@
   "homepage": "https://github.com/samsoft00/getir-restful-api-challenge#readme",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "@joi/date": "^2.0.1",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "lodash": "^4.17.20"
+    "fancy-log": "^1.3.3",
+    "joi": "^17.3.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.5",
+    "@babel/runtime": "^7.10.5",
+    "babel-eslint": "^10.1.0",
+    "jest": "^26.6.3",
+    "standard": "^16.0.3",
+    "supertest": "^6.1.1"
+  },
+  "standard": {
+    "ignore": [
+      "node_modules/"
+    ],
+    "parser": "babel-eslint"
+  },
+  "jest": {
+    "globals": {
+      "testRequest": {
+        "startDate": "2016-01-26",
+        "endDate": "2018-02-02",
+        "maxCount": 3000,
+        "minCount": 2700
+      }
+    }
   }
 }
