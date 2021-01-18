@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start:dev": "NODE_ENV=development NODE_CONFIG_DIR=./src/configs nodemon",
-    "build": "NODE_ENV=production babel src -d dist --copy-files",
+    "build": "rimraf ./dist && babel src -d dist --copy-files",
     "fix": "standard --fix",
     "test": "jest --no-cache --detectOpenHandles --forceExit"
   },
@@ -39,7 +39,8 @@
     "joi": "^17.3.0",
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
-    "mongodb": "^3.6.3"
+    "mongodb": "^3.6.3",
+    "rimraf": "^3.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
