@@ -28,6 +28,9 @@ NODE_ENV= # dev or production
 MONGODB_URI = # getir-case-study MongoDb name
 MONGODB_NAME = # getir-case-study MongoDb URL
 ```
+## Code Styling
+Used "JavaScript Standard Style" for linter & automatic code fixer
+Link here -> https://github.com/standard/standard
 
 ## Test
 ```
