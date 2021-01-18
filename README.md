@@ -9,7 +9,7 @@ Develop restful api to fetch records within a date range
 
 ## Deliverables
 * Public repo URL: https://github.com/samsoft00/getir-restful-api-challenge.git
-* The public endpoint URL: https://tranquil-reaches-53695.herokuapp.com/v1/getir-records
+* The public endpoint URL (POST): https://tranquil-reaches-53695.herokuapp.com/v1/getir-records
 
 ## Local Setup
 To setup on local machine, kindly run the following command.
@@ -29,7 +29,7 @@ MONGODB_URI = # getir-case-study MongoDb name
 MONGODB_NAME = # getir-case-study MongoDb URL
 ```
 
-## Test Result
+## Test
 ```
 npm run test
 ```
