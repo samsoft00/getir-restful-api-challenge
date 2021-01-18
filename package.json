@@ -30,6 +30,8 @@
   "homepage": "https://github.com/samsoft00/getir-restful-api-challenge#readme",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "@babel/cli": "^7.10.5",
+    "@babel/node": "^7.10.5",
     "@joi/date": "^2.0.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
