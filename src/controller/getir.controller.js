@@ -1,7 +1,7 @@
 import { pick } from 'lodash'
 import moment from 'moment'
 
-import MongoDbManager from '../mongodbManager'
+import MongoDbManager from '../utils/mongodbManager'
 const Joi = require('joi').extend(require('@joi/date'))
 
 const dbManager = MongoDbManager.getInstance()

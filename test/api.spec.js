@@ -1,8 +1,8 @@
 /* eslint-env jest */
 import request from 'supertest'
-import app from '../app'
+import app from '../src/app'
 
-import MongoDbManager from '../mongodbManager'
+import MongoDbManager from '../src/utils/mongodbManager'
 
 /**
  * Unit and/or Integration Tests using jest

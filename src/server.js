@@ -1,6 +1,6 @@
 import Getir from './app'
 import log from 'fancy-log'
-import MongoDbManager from './mongodbManager'
+import MongoDbManager from './utils/mongodbManager'
 require('dotenv').config()
 
 const dbManager = MongoDbManager.getInstance()
